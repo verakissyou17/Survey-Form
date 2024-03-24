@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">🍕  Welcome to Galaxy Pizza!!!</h1>
+    <p id="description">Create your own pizza by completing the form below</p>
+  </header>
+  
+  <main>
+    <form id="survey-form" action="#" method="post">
+      <fieldset>
+        <label for="name">Name: </label>
+        <input type="text" placeholder="Name" name="name" id="name" required>
+        <label for="email">Email: </label>
+        <input type="text" placeholder="Email Address" name="email" id="email" required >
+        <label for="number">Age</label>
+        <input type="number" placeholder="Age" name="age" id="number" min="14" max="120">
+      </fieldset>
+
+      <fieldset>
+        <h2>Select the size</h2>
+        <label for="dropdown">Pizza Size: </label>
+        <select name="pizza-size" id="dropdown">
+          <option value="" selected>--Please choose an option--</option>
+          <option value="small">Small - 24cm</option>
+          <option value="medium">Medium - 30cm</option>
+          <option value="large">Large - 40cm</option>
+          <option value="extra-large">XXL - 60cm</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <h2>What type of crust do you want?</h2>
+        <label for="thin">
+          <input value="thin" type="radio" name="crust" id="thin" checked>
+          Thin
+        </label>
+          <label for="regular">
+          <input value="regular" type="radio" name="crust" id="regular">
+          Regular
+        </label>
+        <label for="thick">
+          <input value="thick" type="radio" name="crust" id="thick">
+          Thick
+        </label>    
+      </fieldset>
+      <fieldset>
+        <h2>What type of topping do you want?</h2>
+        <label for="pepperoni">
+          <input type="checkbox" name="topping" id="pepperoni" value="pepperoni">
+          Pepperoni
+        </label>
+        <label for="mushrooms">
+          <input type="checkbox" name="topping" id="mushrooms" value="mushrooms">
+          Mushrooms
+        </label>
+        <label for="onions">
+          <input type="checkbox" name="topping" id="onions" value="onions">
+          Onions
+        </label>
+        <label for="sausage">
+          <input type="checkbox" name="topping" id="sausage" value="sausage">
+          Sausage
+        </label>
+        <label for="bacon">
+          <input type="checkbox" name="topping" id="bacon" value="bacon">
+          Bacon
+        </label>
+        <label for="extra-cheese">
+          <input type="checkbox" name="topping" id="extra-cheese" value="extra-cheese">
+          Extra Cheese
+        </label>
+        <label for="green-peppers">
+          <input type="checkbox" name="topping" id="green-peppers" value="green-peppers">
+          Green Peppers
+        </label>
+        <label for="olives">
+          <input type="checkbox" name="topping" id="olives" value="olives">
+          Olives
+        </label>
+        <label for="zucchini">
+          <input type="checkbox" name="topping" id="zucchini" value="zucchini">
+          Zucchini
+        </label>
+        <label for="spinach">
+          <input type="checkbox" name="topping" id="spinach" value="spinach">
+          Spinach
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="message">Message: </label>
+        <textarea name="message" id="message" cols="60" rows="10" placeholder="Any comments or suggestions?"></textarea>
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  <footer>
+    <p id="copyright">Copyright &copy; 2024 Galaxy Pizza</p>
+  </footer>
+</body>
+</html>

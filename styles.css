@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://img.freepik.com/premium-photo/traditional-italian-pizza-dark-table_1220-2736.jpg?w=360');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(0, 0%, 53%);
+  font-family: 'Poppins', sans-serif;
+  padding: 1em;
+}
+
+header {
+  text-align: center;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  padding: 1em;
+  border-radius: 20px;
+  box-shadow: 0 0 2px 2px hsla(0, 2%, 66%, 0.308);
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 1em;
+  border-bottom: 1px solid hsla(0, 2%, 66%, 0.308);
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin-block: 0.25em;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 0.786rem + 1.95vw, 3rem);
+  color:hsl(0, 0%, 100%);
+  font-weight: bold;
+}
+
+#description {
+  color: hsl(130, 100%, 50%);
+  font-weight: 500;
+  font-size: clamp(1.2rem, 0.786rem + 1.905vw, 1.5rem);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  margin: 0.5em 0 0 0;
+  width: 100%;
+  min-height: 2.5em;
+  padding: 0.5em;
+}
+
+select {
+  background-color: white;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: .5em;
+  border: none;
+  margin-bottom: 1.5em;
+  border-radius: 20px;
+  background-color: hsl(130, 100%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: hsl(130, 100%, 37%);
+}
+
+footer {
+  margin-top: 1em;
+  text-align: center;
+  color:hsl(0, 0%, 100%);
+}
